@@ -169,3 +169,102 @@ button:hover {
     align-items: flex-start;
   }
 }
+
+
+
+
+/* WebinarDetail.css */
+
+.webinar-detail-container {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #f9f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Nunito', sans-serif; /* Changed font */
+}
+
+.back-button {
+  background-color: #7265E3; /* Darker purple */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-size: 15px; /* Slightly larger */
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #5A4FCF; /* Even darker purple */
+}
+
+.webinar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.webinar-title {
+  font-size: 30px; /* Slightly larger */
+  font-weight: 700; /* Bolder */
+  color: #343A40; /* Dark gray */
+}
+
+.webinar-status {
+  background-color: #38A169; /* Green */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.webinar-content {
+  margin-bottom: 32px;
+}
+
+.webinar-description {
+  color: #4A5568; /* Softer gray */
+  line-height: 1.7;
+  font-size: 17px; /* Slightly larger */
+}
+
+.webinar-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.info-item {
+  padding: 20px;
+  border: 1px solid #E2E8F0; /* Light gray */
+  border-radius: 8px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.info-item label {
+  font-weight: 600; /* More emphasis */
+  margin-bottom: 8px;
+  display: block;
+  color: #718096; /* Medium gray */
+  font-size: 15px; /* Slightly larger */
+}
+
+.info-item span {
+  color: #2D3748; /* Darker */
+  font-size: 20px; /* Larger */
+  font-weight: 700; /* Bolder */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .webinar-info {
+    grid-template-columns: 1fr;
+  }
+}

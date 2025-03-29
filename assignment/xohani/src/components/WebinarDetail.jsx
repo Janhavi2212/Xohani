@@ -8,18 +8,65 @@ const WebinarDetail = ({ webinars }) => {
   if (!webinar) return <h2>Webinar Not Found</h2>;
 
   return (
-    <div className="container">
-      <button onClick={() => navigate(-1)}>Back</button>
-      <h2>{webinar.title}</h2>
-      <p>{webinar.description}</p>
-      <p><strong>Price:</strong> {webinar.price}</p>
-      <p><strong>Rating:</strong> ⭐ {webinar.rating}</p>
-      <p><strong>Total Number of Attendees:</strong>{webinar.totalAttendees}</p>
-      <p><strong>Total revenue generated:</strong>{webinar.totalRevenue}</p>
-      <p><strong>Monthly active users:</strong>{webinar.monthlyUsers}</p>
-      <p><strong>Subscribers</strong>{webinar.subscribers}</p>
-      <p><strong>Affiliate Revenue</strong>{webinar.affiliateRevenue}</p>
-      <p><strong>Webinar Revenue</strong>{webinar.webinarRevenue}</p>
+    <div className="webinar-detail-container">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        Back
+      </button>
+
+      <div className="webinar-header">
+        <h2 className="webinar-title">{webinar.title}</h2>
+        {webinar.active && <span className="webinar-status">Active</span>}
+      </div>
+
+      <div className="webinar-content">
+        <p className="webinar-description">{webinar.description}</p>
+      </div>
+
+      <div className="webinar-info">
+        <div className="info-row">
+          <div className="info-item">
+            <label>Price:</label>
+            <span>${webinar.price}</span>
+          </div>
+          <div className="info-item">
+            <label>Rating:</label>
+            <span>⭐ {webinar.rating}</span>
+          </div>
+        </div>
+
+        <div className="info-row">
+          <div className="info-item">
+            <label>Total Attendees:</label>
+            <span>{webinar.totalAttendees}</span>
+          </div>
+          <div className="info-item">
+            <label>Total Revenue:</label>
+            <span>${webinar.totalRevenue}</span>
+          </div>
+        </div>
+
+        <div className="info-row">
+          <div className="info-item">
+            <label>Monthly Users:</label>
+            <span>{webinar.monthlyUsers}</span>
+          </div>
+          <div className="info-item">
+            <label>Subscribers:</label>
+            <span>{webinar.subscribers}</span>
+          </div>
+        </div>
+
+        <div className="info-row">
+          <div className="info-item">
+            <label>Affiliate Revenue:</label>
+            <span>${webinar.affiliateRevenue}</span>
+          </div>
+          <div className="info-item">
+            <label>Webinar Revenue:</label>
+            <span>${webinar.webinarRevenue}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
