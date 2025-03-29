@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #f8f9fc;
+  border-bottom: 2px solid #e0e3eb;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b4f58;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #e5e8f0;
+}
+
+
+.webinar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.webinar-card {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e3eb;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.webinar-card:hover {
+  transform: translateY(-3px);
+}
+
+.webinar-card h3 {
+  font-size: 18px;
+  color: #343a40;
+}
+
+.webinar-card p {
+  font-size: 14px;
+  color: #606770;
+  margin-top: 5px;
+}
+
+
+.create-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #6559f5;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.create-button:hover {
+  background: #5244d4;
+}
+
+.webinar-detail {
+  padding: 20px;
+}
+
+.webinar-detail h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+.webinar-detail p {
+  font-size: 16px;
+  color: #606770;
+  margin-top: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4b4f58;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  background: #6559f5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5244d4;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #6559f5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
