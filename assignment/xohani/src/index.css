@@ -171,10 +171,6 @@ button:hover {
 }
 
 
-
-
-/* WebinarDetail.css */
-
 .webinar-detail-container {
   max-width: 950px;
   margin: 20px auto;
@@ -182,23 +178,23 @@ button:hover {
   background-color: #f9f9fc;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  font-family: 'Nunito', sans-serif; /* Changed font */
+  font-family: 'Nunito', sans-serif; 
 }
 
 .back-button {
-  background-color: #7265E3; /* Darker purple */
+  background-color: #7265E3; 
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
   margin-bottom: 24px;
-  font-size: 15px; /* Slightly larger */
+  font-size: 15px; 
   transition: background-color 0.2s ease;
 }
 
 .back-button:hover {
-  background-color: #5A4FCF; /* Even darker purple */
+  background-color: #5A4FCF; 
 }
 
 .webinar-header {
@@ -209,13 +205,13 @@ button:hover {
 }
 
 .webinar-title {
-  font-size: 30px; /* Slightly larger */
-  font-weight: 700; /* Bolder */
-  color: #343A40; /* Dark gray */
+  font-size: 30px; 
+  font-weight: 700; 
+  color: #343A40; 
 }
 
 .webinar-status {
-  background-color: #38A169; /* Green */
+  background-color: #38A169; 
   color: #fff;
   padding: 6px 12px;
   border-radius: 6px;
@@ -228,9 +224,9 @@ button:hover {
 }
 
 .webinar-description {
-  color: #4A5568; /* Softer gray */
+  color: #4A5568; 
   line-height: 1.7;
-  font-size: 17px; /* Slightly larger */
+  font-size: 17px; 
 }
 
 .webinar-info {
@@ -241,7 +237,7 @@ button:hover {
 
 .info-item {
   padding: 20px;
-  border: 1px solid #E2E8F0; /* Light gray */
+  border: 1px solid #E2E8F0; /
   border-radius: 8px;
   text-align: left;
   background-color: #fff;
@@ -249,20 +245,20 @@ button:hover {
 }
 
 .info-item label {
-  font-weight: 600; /* More emphasis */
+  font-weight: 600; 
   margin-bottom: 8px;
   display: block;
-  color: #718096; /* Medium gray */
-  font-size: 15px; /* Slightly larger */
+  color: #718096; 
+  font-size: 15px; 
 }
 
 .info-item span {
-  color: #2D3748; /* Darker */
-  font-size: 20px; /* Larger */
-  font-weight: 700; /* Bolder */
+  color: #2D3748;
+  font-size: 20px; 
+  font-weight: 700; 
 }
 
-/* Responsive adjustments */
+/
 @media (max-width: 768px) {
   .webinar-info {
     grid-template-columns: 1fr;
